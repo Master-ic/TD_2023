@@ -1,0 +1,98 @@
+standard
+***Report Model: SF1_SOC Device: SF1S60CG121I***
+
+IO Statistics
+#IO                        29
+  #input                    6
+  #output                  23
+  #inout                    0
+
+Utilization Statistics
+#lut                      574   out of   5824    9.86%
+#reg                      633   out of   5824   10.87%
+#le                       726
+  #lut only                93   out of    726   12.81%
+  #reg only               152   out of    726   20.94%
+  #lut&reg                481   out of    726   66.25%
+#dsp                        2   out of     10   20.00%
+#bram                       2   out of     26    7.69%
+  #bram9k                   2
+  #fifo9k                   0
+#hard-ip                    1
+  #mcu                      1   out of      1  100.00%
+  #dsc                      0   out of      1    0.00%
+  #dsi                      0   out of      2    0.00%
+  #psram controller         0   out of      2    0.00%
+#pad                       29   out of     55   52.73%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      2   50.00%
+#gclk                       4   out of     16   25.00%
+
+Clock Resource Statistics
+Index     ClockNet                 Type               DriverType         Driver                  Fanout
+#1        u_pll/clk0_buf           GCLK               pll                u_pll/pll_inst.clkc0    345
+#2        vga_show_inst/vga_clk    GCLK               pll                u_pll/pll_inst.clkc1    34
+#3        I_clk_25m_dup_1          GCLK               io                 I_clk_25m_syn_2.di      1
+
+
+Detailed IO Report
+
+      Name        Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+   I_clk_25m        INPUT         D7        LVCMOS18          N/A          PULLUP      NONE    
+   I_jtag_tck       INPUT         C7        LVCMOS18          N/A          PULLUP      NONE    
+   I_jtag_tdi       INPUT         D5        LVCMOS18          N/A          PULLUP      NONE    
+   I_jtag_tms       INPUT         D6        LVCMOS18          N/A          PULLUP      NONE    
+    I_rst_n         INPUT         J2        LVCMOS18          N/A          PULLUP      NONE    
+   I_uart_rx        INPUT         E4        LVCMOS18          N/A          PULLUP      NONE    
+   O_jtag_tdo      OUTPUT         C6        LVCMOS18           8            NONE       NONE    
+     O_led0        OUTPUT         J5        LVCMOS18           8            NONE       NONE    
+     O_led1        OUTPUT         H5        LVCMOS18           8            NONE       NONE    
+     O_led2        OUTPUT         G4        LVCMOS18           8            NONE       NONE    
+   O_uart_tx       OUTPUT         A4        LVCMOS18           8            NONE       NONE    
+  vga_blue[4]      OUTPUT         A9        LVCMOS18           8            NONE       NONE    
+  vga_blue[3]      OUTPUT        A11        LVCMOS18           8            NONE       NONE    
+  vga_blue[2]      OUTPUT         B8        LVCMOS18           8            NONE       NONE    
+  vga_blue[1]      OUTPUT        A10        LVCMOS18           8            NONE       NONE    
+  vga_blue[0]      OUTPUT         B9        LVCMOS18           8            NONE       NONE    
+  vga_green[5]     OUTPUT         L1        LVCMOS18           8            NONE       NONE    
+  vga_green[4]     OUTPUT        E10        LVCMOS18           8            NONE       NONE    
+  vga_green[3]     OUTPUT         K1        LVCMOS18           8            NONE       NONE    
+  vga_green[2]     OUTPUT        B11        LVCMOS18           8            NONE       NONE    
+  vga_green[1]     OUTPUT         A8        LVCMOS18           8            NONE       NONE    
+  vga_green[0]     OUTPUT        B10        LVCMOS18           8            NONE       NONE    
+   vga_hsync       OUTPUT         G3        LVCMOS18           8            NONE       NONE    
+   vga_red[4]      OUTPUT         F9        LVCMOS18           8            NONE       NONE    
+   vga_red[3]      OUTPUT         L2        LVCMOS18           8            NONE       NONE    
+   vga_red[2]      OUTPUT         E9        LVCMOS18           8            NONE       NONE    
+   vga_red[1]      OUTPUT         K2        LVCMOS18           8            NONE       NONE    
+   vga_red[0]      OUTPUT        F10        LVCMOS18           8            NONE       NONE    
+   vga_vsync       OUTPUT        C10        LVCMOS18           8            NONE       NONE    
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------+
+|Instance        |Module     |le     |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------+
+|top             |SF1_SOC    |726    |547     |27      |633     |2       |2       |
+|  u_SF1_MCU     |SF1_MCU    |6      |3       |3       |0       |0       |0       |
+|  u_ahb_pwm     |ahb_pwm    |593    |437     |4       |582     |1       |2       |
+|    uut         |rom_weight |0      |0       |0       |0       |1       |0       |
+|  u_pll         |pll        |0      |0       |0       |0       |0       |0       |
+|  vga_show_inst |vga_show   |111    |91      |20      |51      |1       |0       |
+|    u5          |ROM        |0      |0       |0       |0       |1       |0       |
++---------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets  
+    #1          1       1058  
+    #2          2        25   
+    #3          3        51   
+    #4          4        20   
+    #5        5-10       31   
+    #6        11-50      62   
+    #7       51-100      2    
+    #8       101-500     3    
+  Average     2.78            

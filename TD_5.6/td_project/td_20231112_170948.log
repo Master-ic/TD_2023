@@ -1,0 +1,49 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = D:/XILINX_EXE/TD_5.6/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     13456
+   Run Date =   Sun Nov 12 17:09:48 2023
+
+   Run on =     DESKTOP-1HJPLU7
+============================================================
+RUN-001 : GUI based run...
+RUN-1002 : start command "import_device sf1_6.db -package SF1S60CG121I"
+ARC-1001 : Device Initialization.
+ARC-1001 : -------------------------------------------------
+ARC-1001 :       OPTION       |      IO       |   SETTING   
+ARC-1001 : -------------------------------------------------
+ARC-1001 :        done        |      B4       |    gpio    
+ARC-1001 :        initn       |      A5       |    gpio    
+ARC-1001 :       jtagen       |      B7       |    gpio    
+ARC-1001 :      programn      |      B5       |  dedicate  
+ARC-1001 :   tdi/tms/tck/tdo  |  C4/A6/A7/C5  |  dedicate  
+ARC-1001 : -------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "mif2dat -mif F:/al/sf1_-project-master/sf1_-project-master/src/PWM/td_project/al_ip/weight.mif"
+SYN-6521 CRITICAL-WARNING: "10: F8;" address out of range
+SYN-6521 CRITICAL-WARNING: "11: 22;" address out of range
+SYN-6521 CRITICAL-WARNING: "12: FD;" address out of range
+SYN-6521 CRITICAL-WARNING: "13: EE;" address out of range
+SYN-6521 CRITICAL-WARNING: "14: 00;" address out of range
+SYN-6521 CRITICAL-WARNING: "15: 01;" address out of range
+SYN-6521 CRITICAL-WARNING: "16: FD;" address out of range
+SYN-6521 CRITICAL-WARNING: "17: 02;" address out of range
+SYN-6521 CRITICAL-WARNING: "18: 0F;" address out of range
+SYN-6521 CRITICAL-WARNING: "19: 06;" address out of range
+SYN-6521 Similar messages will be suppressed.
+RUN-1002 : start command "mif2dat -mif F:/al/sf1_-project-master/sf1_-project-master/src/PWM/td_project/al_ip/weight.mif"
+SYN-6521 CRITICAL-WARNING: "10: F8;" address out of range
+SYN-6521 CRITICAL-WARNING: "11: 22;" address out of range
+SYN-6521 CRITICAL-WARNING: "12: FD;" address out of range
+SYN-6521 CRITICAL-WARNING: "13: EE;" address out of range
+SYN-6521 CRITICAL-WARNING: "14: 00;" address out of range
+SYN-6521 CRITICAL-WARNING: "15: 01;" address out of range
+SYN-6521 CRITICAL-WARNING: "16: FD;" address out of range
+SYN-6521 CRITICAL-WARNING: "17: 02;" address out of range
+SYN-6521 CRITICAL-WARNING: "18: 0F;" address out of range
+SYN-6521 CRITICAL-WARNING: "19: 06;" address out of range
+SYN-6521 Similar messages will be suppressed.
+RUN-1002 : start command "mif2dat -mif F:/al/sf1_-project-master/sf1_-project-master/src/PWM/td_project/al_ip/weight.mif"
+GUI-2000 : The IP files have been created successfully :{SF1S60CG121I(F:/al/sf1_-project-master/sf1_-project-master/src/PWM/td_project/al_ip/rom_weight.ipc)}

@@ -1,0 +1,48 @@
+standard
+***Report Model: SF1_SOC Device: SF1S60CG121I***
+
+IO Statistics
+#IO                        29
+  #input                    6
+  #output                  23
+  #inout                    0
+
+LUT Statistics
+#Total_luts               586
+  #lut4                   464
+  #lut5                    52
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b              70
+
+Utilization Statistics
+#lut                      586   out of   5824   10.06%
+#reg                      633   out of   5824   10.87%
+#le                         0
+#dsp                        2   out of     10   20.00%
+#bram                       2   out of     26    7.69%
+  #bram9k                   2
+  #fifo9k                   0
+#hard-ip                    1
+  #mcu                      1   out of      1  100.00%
+  #dsc                      0   out of      1    0.00%
+  #dsi                      0   out of      2    0.00%
+  #psram controller         0   out of      2    0.00%
+#pad                       29   out of     55   52.73%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        1   out of      2   50.00%
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------+
+|Instance        |Module     |lut     |ripple  |seq     |bram    |dsp     |
++-------------------------------------------------------------------------+
+|top             |SF1_SOC    |516     |70      |633     |2       |2       |
+|  u_SF1_MCU     |SF1_MCU    |0       |11      |0       |0       |0       |
+|  u_ahb_pwm     |ahb_pwm    |432     |15      |582     |1       |2       |
+|    uut         |rom_weight |0       |0       |0       |1       |0       |
+|  u_pll         |pll        |0       |0       |0       |0       |0       |
+|  vga_show_inst |vga_show   |68      |44      |51      |1       |0       |
+|    u5          |ROM        |0       |0       |0       |1       |0       |
++-------------------------------------------------------------------------+

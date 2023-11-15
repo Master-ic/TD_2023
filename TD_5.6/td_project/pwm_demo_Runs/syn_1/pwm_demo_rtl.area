@@ -1,0 +1,45 @@
+standard
+***Report Model: SF1_SOC Device: SF1S60CG121I***
+
+IO Statistics
+#IO                        29
+  #input                    6
+  #output                  23
+  #inout                    0
+
+Gate Statistics
+#Basic gates              751
+  #and                     62
+  #nand                     0
+  #or                       2
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                     16
+  #bufif1                   3
+  #MX21                    35
+  #FADD                     0
+  #DFF                    633
+  #LATCH                    0
+#MACRO_ADD                 15
+#MACRO_EQ                  23
+#MACRO_MULT                 1
+#MACRO_MUX                622
+#MACRO_OTHERS               9
+
+Report Hierarchy Area:
++------------------------------------------------------------+
+|Instance            |Module         |gates  |seq    |macros |
++------------------------------------------------------------+
+|top                 |SF1_SOC        |118    |633    |48     |
+|  u0_gpio_controler |gpio_controler |1      |0      |0      |
+|  u1_gpio_controler |gpio_controler |1      |0      |0      |
+|  u2_gpio_controler |gpio_controler |1      |0      |0      |
+|  u_SF1_MCU         |SF1_MCU        |0      |0      |6      |
+|  u_ahb_pwm         |ahb_pwm        |102    |582    |14     |
+|    uut             |rom_weight     |0      |0      |1      |
+|  u_pll             |pll            |0      |0      |1      |
+|  vga_show_inst     |vga_show       |12     |51     |27     |
+|    u5              |ROM            |0      |0      |1      |
++------------------------------------------------------------+

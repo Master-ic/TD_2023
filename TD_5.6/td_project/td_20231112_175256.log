@@ -1,0 +1,12 @@
+============================================================
+   Tang Dynasty, V5.6.59063
+   Copyright (c) 2012-2022 Anlogic
+   Executable = D:/XILINX_EXE/TD_5.6/bin/td.exe
+   Built at =   12:45:13 Sep  6 2022
+   Run by =     13456
+   Run Date =   Sun Nov 12 17:52:56 2023
+
+   Run on =     DESKTOP-1HJPLU7
+============================================================
+RUN-001 : GUI based run...
+GUI-2000 : The IP files have been created successfully :{SF1S60CG121I(F:/al/sf1_-project-master/sf1_-project-master/src/PWM/td_project/al_ip/pll.ipc)}

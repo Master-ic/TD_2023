@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SF1McuConfig>
+    <Config>
+        <SF1_AHB_EN>1</SF1_AHB_EN>
+        <SF1_DLM_EN>0</SF1_DLM_EN>
+        <SF1_FLASH_FOR_USER_EN>0</SF1_FLASH_FOR_USER_EN>
+        <SF1_GPIO0_EN>1</SF1_GPIO0_EN>
+        <SF1_GPIO1_EN>1</SF1_GPIO1_EN>
+        <SF1_GPIO2_EN>1</SF1_GPIO2_EN>
+        <SF1_GPIO3_EN>0</SF1_GPIO3_EN>
+        <SF1_GPIO4_EN>0</SF1_GPIO4_EN>
+        <SF1_GPIO5_EN>0</SF1_GPIO5_EN>
+        <SF1_GPIO6_EN>0</SF1_GPIO6_EN>
+        <SF1_GPIO7_EN>0</SF1_GPIO7_EN>
+        <SF1_I2C_EN>0</SF1_I2C_EN>
+        <SF1_JTAG_TO_PAD>1</SF1_JTAG_TO_PAD>
+        <SF1_MCU_EN>1</SF1_MCU_EN>
+        <SF1_QSPI_EN>0</SF1_QSPI_EN>
+        <SF1_RESET_VECTOR>E0000</SF1_RESET_VECTOR>
+        <SF1_RISCV_JTAG_2W>0</SF1_RISCV_JTAG_2W>
+        <SF1_TIMER_EN>1</SF1_TIMER_EN>
+        <SF1_UART_EN>1</SF1_UART_EN>
+    </Config>
+    <GeneralConfig>
+        <Device>SF1S60CG121I</Device>
+        <Type>SF1_LOGIC_SF1Mcu</Type>
+        <Version>V1.0</Version>
+        <create_VHDL>false</create_VHDL>
+        <inst>SF1_MCU</inst>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <Verilog Enable="true">SF1_MCU.v</Verilog>
+    </GeneratedFiles>
+</SF1McuConfig>
